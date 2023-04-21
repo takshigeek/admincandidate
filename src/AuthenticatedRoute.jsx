@@ -8,7 +8,7 @@ function AuthenticatedRoute({ ...rest }) {
     AuthService.getUser().user_type === "admin" ? (
       <Navigate to="/admin/dashboard" />
     ) : (
-      <Navigate to="/candidate/home" />
+      <Navigate to="/user/home" />
     )
   ) : (
     <AuthLayout {...rest} />

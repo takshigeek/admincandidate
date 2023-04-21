@@ -11,7 +11,7 @@ function App() {
         </Route>
         <Route path="admin/*" element={<GuardedRoute />}>
         </Route>
-        <Route path="candidate/*" element={<GuardedRoute />}>
+        <Route path="user/*" element={<GuardedRoute />}>
         </Route>
         <Route path="*" element={<Navigate to="auth/login" replace={true}/>} />
       </Routes>

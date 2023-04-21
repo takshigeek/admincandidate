@@ -9,7 +9,7 @@ export const getRoutes = (routes) => {
     if (
       prop.layout === "/auth" ||
       prop.layout === "/admin" ||
-      prop.layout === "/candidate"
+      prop.layout === "/user"
     ) {
       return <Route path={prop.path} key={key} element={prop.component} />;
     } else {
